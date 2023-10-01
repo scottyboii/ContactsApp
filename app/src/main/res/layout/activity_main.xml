@@ -30,7 +30,6 @@
         android:layout_marginEnd="176dp"
         android:ems="10"
         android:inputType="text"
-        android:text="First Name"
         app:layout_constraintBottom_toTopOf="@+id/editTextSurname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -72,18 +71,24 @@
         android:layout_marginEnd="176dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Surname"
         app:layout_constraintBottom_toTopOf="@+id/editTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        tools:ignore="Surname" />
 
     <Button
         android:id="@+id/buttonSeeContacts"
         android:layout_width="132dp"
         android:layout_height="67dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="277dp"
         android:text="See Contacts"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
 </androidx.constraintlayout.widget.ConstraintLayout>

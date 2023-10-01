@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         buttonSeeContacts = findViewById(R.id.buttonSeeContacts);
         textViewTitle = findViewById(R.id.textViewTitle);
 
+        editTextName.setHint("First Name");
+        editTextSurname.setHint("Surname");
+        editTextEmailAddress.setHint("Email Address");
+
         dbHandler = new DBHandler(MainActivity.this);
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
